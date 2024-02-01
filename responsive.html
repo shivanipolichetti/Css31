@@ -1,0 +1,244 @@
+<html>
+    <head><meta charset="UTF-8">
+        <meta name="viewport"content="width=device-width, initial-scale=1.0">
+        <title> Design a webpage adjusted for mobile screen size</title>
+        <style>
+            #nav a {
+        text-decoration: none;
+        text-align: center;
+        color:black;
+        margin-right: 15px;
+     }
+          #nav a:first-child {
+        flex-basis: 70%;
+        text-align: left;
+        padding-left: 10px;
+        }
+
+        #nav{
+            position:fixed;
+            top: 0;
+            width: 100%;
+            height: 50px;
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+           justify-content: space-between;
+            align-items: center;
+           
+        }
+
+          #home p{
+            position: relative;
+            top: -400px;
+            left: 40%;
+          }
+          #home img{
+            width: 100%;
+            height: 100%;
+          }
+     #project img{
+        width: 300px;
+         height:250px;
+         margin-bottom: 10px;
+     }
+     span{
+        position: absolute;
+        background-color: black;
+        color: white;
+     }
+   #about{
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+   }
+   
+   
+    #about button{
+        border:none;
+        color: black;
+        background-color:lightblue;
+    }
+       input{
+        width: 100%;
+         line-height: 30px;
+         margin-bottom: 10px;
+         opacity: 0.5;
+       }
+       button{
+        background-color: black;
+        color: white;
+       }
+       #footer{
+         width:100%;
+         background-color: black;
+         color: white;
+         padding:70px;
+         text-align: center;
+       }
+       #home,#project,#about,#contact{
+        margin-left:20px;
+       }
+       hr{
+        opacity:0.6;
+       }
+       @media screen and (max-width:400px) {
+        #nav a {
+        text-decoration: none;
+        text-align: center;
+        color:black;
+        margin-right: 15px;
+     }
+          #nav a:first-child {
+        flex-basis: 30%;
+        text-align: left;
+        padding-left: 10px;
+        }
+
+        #nav{
+            position:fixed;
+            top: 0;
+            width: 100%;
+            height: 50px;
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+           justify-content: space-between;
+            align-items: center;
+           
+        }
+        #home img{
+            width: 100%;
+            height:100%;
+          }
+          #home p{
+            position: relative;
+            top: -400px;
+            left: 40%;
+          }
+        
+          #project img{
+        width:100%;
+         height:100%;
+         margin-bottom: 10px;
+     }
+    
+        span{
+        position: absolute;
+        background-color: black;
+        color: white;
+     }
+    
+       #About {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+       }    
+    
+       input{
+        width: 100%;
+         line-height: 30px;
+         margin-bottom: 10px;
+         opacity: 0.5;
+       }
+       button{
+        background-color: black;
+        color: white;
+       }
+    }
+       
+        </style>
+    </head>
+    <body>
+    <div id="nav">
+    <a href="#home"><b>PS</b>Architect</a>
+    <a href="#project">Projects</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    </div>
+     <div id="home">
+        <img src="./p/architect.jpg">
+        <p style="font-size:40px;"><strong style="background-color: darkgrey;">PS</strong>Architect</p>
+     </div>   
+    <hr>
+    <div id="project">
+    <h2>Projects</h2>
+    <br>
+    <span>Summer House</span>
+    <img src="./p/house1.jpg">
+    <span>Brick House</span>
+    <img src="./p/house2.jpg">
+    <span>Renovated</span>
+    <img src="./p/house3.jpg">
+    <span>Barn House</span>
+    <img src="./p/house4.jpg">
+    <span>Summer House</span>
+    <img src="./p/house2.jpg">
+    <span>Brick House</span>
+    <img src="./p/house1.jpg">
+    <span>Renovated</span>
+    <img src="./p/house4.jpg">
+    <span>Barn House</span>
+    <img src="./p/house3.jpg">
+
+
+    </div>
+    <h2>About</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <br><br>
+    <div id="about">
+    <div>
+        <img src="./p/ceo.jpg" width="350px;">
+        <h4>John Doe</h4>
+        <h6> Ceo And Founder</h6>  
+        <button>Contact</button>
+    </div>
+    <br>
+    <div>
+        <img src="./p/architect1.jpg" width="340px;">
+        <h4>Jane Doe </h4>
+        <h6>Architect</h6>
+        <button>Contact</button>
+    </div>
+    <br>
+    <div>
+        <img src="./p/architect2.jpg" width="350px;">
+        <h4>Mike Boss</h4>
+        <h6>Architect</h6>  
+        <button>Contact</button>
+    </div>
+    <br>
+    <div>
+        <img src="./p/architect3.jpg"width="350px;">
+        <h4><strong>Dan Star</strong></h4>
+        <h6>Architect</h6>  
+        <button>Contact</button>
+    </div>
+</div>
+
+    <div id="contact">
+    <br><br>
+    <h2>Contact</h2>
+    <hr>
+    <p>Lets get in touch and talk about your next project.</p>
+    <div>
+        <form>
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <input type="text" placeholder="Subject">
+            <input type="text"  placeholder="Comment">
+            <button>SEND MESSAGE</button>
+        </form>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.63334636512!2d78.44620527516592!3d17.429374883464984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91224f16e4cd%3A0x273a36f46eca9dc6!2sP&#39;s%20Architects!5e0!3m2!1sen!2sin!4v1706780690593!5m2!1sen!2sin" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <br>    
+    <div id="footer">
+        <p>Powdered by <u>&#169PS@12345</u></p>
+    </div>
+    </body>
+    </html>
+           
+        
+      
